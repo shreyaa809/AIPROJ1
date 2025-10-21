@@ -1,3 +1,120 @@
 {
-    
+    "intents": [
+        {"tag": "greetings",
+        "patterns": ["hello","hi","hey","good day","greetings","whats up","hows it going?"],
+        "responses": ["Hello! How can I help you?","Hey!","Hey there! What can I do for you?"]
+        },
+        {"tag": "goodbye",
+        "patterns": ["see you","bye","good bye","i am leaving","have a good day","talk to you later","ttyl"],
+        "responses": ["Sad to see you go :(","Hope to see you soon","Bye!"]
+        },
+        {"tag": "name",
+        "patterns":["what is your name","what should i call u","Introduce yourself"],
+        "responses": ["I am VitAsk","My name is VitAsk","You can call me VitAsk","Hi I am VitAsk and I am here to solve your queries regarding VIT"]
+        },
+        {"tag": "task",
+        "patterns":["What do you do?"],
+        "responses": ["I will answer your quesries regarding VIT Vellore. You can ask me about the various subjects in different sems, the preferable teachers, the name of HODS and many more things! I can even assist you in using VTOP"]
+        },
+        {"tag": "Official_site",
+        "patterns":["What is the VIT's official site?", "What is the official website of VIT?",
+        "Give me VIT website",
+        "VIT website link",
+        "Official site of VIT"],
+        "responses": ["The official website of VIT is https://vit.ac.in/ 🌐"]
+        },
+        {"tag": "About",
+        "patterns":["Tell me about VIT","Introduce Vit"],
+        "responses":["VIT stands for Vellore Institute of Technology. It has 3 branches in Vellore, Bhopal, Chennai and Amravati. You can know more about VIT through its official site: https://vit.ac.in/"]
+        },
+        {"tag": "vtop",
+        "patterns": [
+           "Which site is used by VIT students for accessing study materials?",
+           "Where can I find my attendance and grades?",
+           "Which portal do VIT students use for academics?",
+          "What is the link to the VTOP portal?",
+         "How do I access VTOP?",
+         "Where can I log in to VTOP?"
+        ],
+        "responses": [
+           "VIT students use the VTOP portal for all academic activities such as attendance, grades, and study materials. For Vellore campus, you can log in here: https://vtop.vit.ac.in/vtop/login 🔗"
+        ]
+        },
+        {"tag": "schools",
+        "patterns": [
+         "List of schools in VIT",
+         "What are the schools at VIT?",
+         "How many schools are there in VIT?",
+         "Names of all the schools in VIT",
+         "Tell me about the academic schools in VIT",
+         "What are the different departments or schools in VIT?"],
+        "responses": [
+            "Here’s the list of schools at VIT:\n\n1️⃣ School of Advanced Sciences (SAS)\n2️⃣ School of Bio Sciences & Technology (SBST)\n3️⃣ School of Civil Engineering (SCE)\n4️⃣ School of Chemical Engineering (SCHEME)\n5️⃣ School of Computer Science and Engineering (SCOPE)\n6️⃣ School of Computer Science Engineering and Information Systems (SCORE)\n7️⃣ School of Electrical Engineering (SELECT)\n8️⃣ School of Electronics Engineering (SENSE)\n9️⃣ School of Healthcare Science and Engineering (SHINE)\n🔟 School of Mechanical Engineering (SMEC)\n11️⃣ School of Social Sciences and Languages (SSL)\n12️⃣ School of Hotel & Tourism Management (HOT)\n13️⃣ VIT School of Agricultural Innovations And Advanced Learning (VAIAL)\n14️⃣ VIT Business School (VIT BS)\n15️⃣ VIT School of Design (V-SIGN)\n16️⃣ VIT School of Media, Arts and Technology (V-SMART)\n17️⃣ School of Architecture (V-SPARC)"
+        ]
+        },
+        { "tag": "faculty_info",
+        "patterns": [
+            "Can you give me faculty info?",
+            "HOD?",
+            "Where can I find faculty details?",
+            "Give me the list of faculty members.",
+            "Where can I check information about professors?",
+            "Faculty details of VIT",
+            "VIT HOD details","How can I contact my teacher?"
+        ],
+        "responses": [
+          "You can find complete information about VIT faculty members and Heads of Departments (HODs) on the official VIT Faculty page: https://vit.ac.in/faculty 👩‍🏫👨‍🏫"
+        ]
+        },
+        {"tag": "dean",
+        "patterns": [
+           "Can you tell me the names of all deans of schools?",
+          "List of all school deans in VIT",
+          "Who are the deans of different schools?",
+          "Give me the dean names and their emails",
+          "List all VIT school deans with contact info"
+        ],
+         "responses": [
+         "Here are the deans of various schools at VIT:\n\n📚 Academics — Dr. Anthony Xavior M (dean.acad@vit.ac.in)\n🔬 Academic Research — Dr. Rajasekaran C (dean.ar@vit.ac.in)\n🧪 School of Advanced Sciences (SAS) — Dr. Karthikeyan K (dean.sas@vit.ac.in)\n🧫 School of Bio Sciences & Technology (SBST) — Dr. Suneetha V (dean.sbst@vit.ac.in)\n🏗️ School of Civil Engineering (SCE) — Dr. Saravana Kumar M P (dean.sce@vit.ac.in)\n⚡ School of Electrical Engineering (SELECT) — Dr. Kowsalya M (dean.select@vit.ac.in)\n📡 School of Electronics Engineering (SENSE) — Dr. Jasmin Pemeena Priyadarisini M (dean.sense@vit.ac.in)\n🧍‍♀️ School of Healthcare Science and Engineering (SHINE) — Dr. Geetha Manivasagam (dean.shine@vit.ac.in)\n⚙️ School of Mechanical Engineering (SMEC) — Dr. Kuppan P (dean.smec@vit.ac.in)\n🗣️ School of Social Sciences and Languages (SSL) — Dr. Selvam V (dean.ssl@vit.ac.in)\n🌾 VIT School of Agricultural Innovations And Advanced Learning (VAIAL) — Dr. Rajendran R (dean.vaial@vit.ac.in)\n🎨 VIT School of Design (V-SIGN) — Dr. Arun Tom Mathew (dean.vsign@vit.ac.in)\n🏫 VIT Business School (VIT BS) — Dr. Mary Cherian (dean.vitbs@vit.ac.in)"
+        ]
+        },
+
+        {
+        "tag": "dean_info",
+        "patterns": [
+            "Can you give me the details of the dean of SCOPE?",
+           "Who is the dean of SBST?",
+            "Tell me the dean of SMEC",
+            "What is the email ID of the dean of SAS?",
+            "Dean of SSL?",
+             "Who is the dean of SHINE?",
+            "Give me the name and email of the dean of VIT BS",
+            "Who is the dean of V-SIGN?"
+            ],
+         "responses": [
+            "Sure! Please specify the school name (like SCOPE, SAS, SMEC, etc.) to get the dean’s details."
+            ]
+        },
+        {
+        "tag": "cs_specialisation",
+        "patterns": [
+          "What are the CSE specializations offered at VIT?",
+          "List of Computer Science branches in VIT",
+         "Different specializations in CSE at VIT",
+         "Tell me about CSE courses at VIT Vellore",
+         "How many specializations are there in Computer Science?",
+         "CSE specializations at VIT Vellore",
+         "What CSE programs does VIT offer?"
+         ],
+        "responses": [
+           "Here are the Computer Science and Engineering (CSE) programs offered at VIT, Vellore:\n\n1️⃣ B.Tech. Computer Science and Engineering\n2️⃣ B.Tech. Computer Science and Engineering (Bioinformatics)\n3️⃣ B.Tech. Computer Science and Engineering (Information Security)\n4️⃣ B.Tech. Computer Science and Engineering and Business Systems (in collaboration with TCS)\n5️⃣ B.Tech. Computer Science and Engineering (Internet of Things)\n6️⃣ B.Tech. Computer Science and Engineering (Data Science)\n7️⃣ B.Tech. Computer Science and Engineering (Block Chain Technology)\n8️⃣ B.Tech. Computer Science and Engineering (Artificial Intelligence and Machine Learning)"
+        ]
+        }
+
+
+
+
+
+
+    ]
 }
