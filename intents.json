@@ -1,31 +1,33 @@
 {
     "intents": [
         {"tag": "greetings",
-        "patterns": ["hello","hi","hey","good day","greetings","whats up","hows it going?"],
+        "patterns": ["hello","hi","hey","good day","greetings","whats up","hows it going?","Hello","Hi","Hey there","How's it going?","How are you?","how are u","wassup","Wassup"],
         "responses": ["Hello! How can I help you?","Hey!","Hey there! What can I do for you?"]
         },
         {"tag": "goodbye",
-        "patterns": ["see you","bye","good bye","i am leaving","have a good day","talk to you later","ttyl"],
+        "patterns": ["see you","bye","good bye","i am leaving","Have a good day","talk to you later","ttyl","Ttyl","have a gud day","Bye","See ya","See Ya!"],
         "responses": ["Sad to see you go :(","Hope to see you soon","Bye!"]
         },
         {"tag": "name",
-        "patterns":["what is your name","what should i call u","Introduce yourself"],
+        "patterns":["what is your name","What should i call u","Introduce yourself","whats your name","What's ur name?","What should I Call u?","ur name?","ur name","Your Name?","Who are u?","Who r you?","who r u?","Who r u?"],
         "responses": ["I am VitAsk","My name is VitAsk","You can call me VitAsk","Hi I am VitAsk and I am here to solve your queries regarding VIT"]
         },
         {"tag": "task",
-        "patterns":["What do you do?"],
-        "responses": ["I will answer your quesries regarding VIT Vellore. You can ask me about the various subjects in different sems, the preferable teachers, the name of HODS and many more things! I can even assist you in using VTOP"]
+        "patterns":["What do you do?","what do u do?","how can u help me?","How can you help me?","How will you help me?"],
+        "responses": ["I will answer your queries regarding VIT Vellore. You can ask me about the various subjects in different sems, the preferable teachers, the name of HODS and many more things! I can even assist you in using VTOP"]
         },
         {"tag": "Official_site",
         "patterns":["What is the VIT's official site?", "What is the official website of VIT?",
-        "Give me VIT website",
-        "VIT website link",
-        "Official site of VIT"],
+        "Give me VIT website", "Official site of VIT","site","Site","website","Website"],
         "responses": ["The official website of VIT is https://vit.ac.in/ 🌐"]
         },
+        {"tag":"user",
+        "patterns":["I need some help regarding vit ","I need your help with some issue","help me solve a problem related to vit","i need ur help","ur help","your help","Your help","Your Help","I neeed your help.","I need your Help."],
+        "responses":["Sure, How may I assist you?","Sure! Tell me what you want."]
+        },
         {"tag": "About",
-        "patterns":["Tell me about VIT","Introduce Vit"],
-        "responses":["VIT stands for Vellore Institute of Technology. It has 3 branches in Vellore, Bhopal, Chennai and Amravati. You can know more about VIT through its official site: https://vit.ac.in/"]
+        "patterns":["Tell me about VIT","Introduce Vit","about vit","about vellore institute of technology","vit","VIT","Vit"],
+        "responses":["VIT stands for Vellore Institute of Technology. It has 4 branches in Vellore, Bhopal, Chennai and Amravati. You can know more about VIT through its official site: https://vit.ac.in/"]
         },
         {"tag": "vtop",
         "patterns": [
@@ -34,7 +36,9 @@
            "Which portal do VIT students use for academics?",
           "What is the link to the VTOP portal?",
          "How do I access VTOP?",
-         "Where can I log in to VTOP?"
+         "Where can I log in to VTOP?",
+         "official site for vit students?","vtop is?", "VTOP is?","whats vtop?","Whats vtop","What's vtop?","What's VTOP?","What is VTOP?"
+        ,"VIT website link","student website","official site","Student Website","vtop","VTOP","Vtop","students site","Student's site"
         ],
         "responses": [
            "VIT students use the VTOP portal for all academic activities such as attendance, grades, and study materials. For Vellore campus, you can log in here: https://vtop.vit.ac.in/vtop/login 🔗"
@@ -42,25 +46,26 @@
         },
         {"tag": "schools",
         "patterns": [
-         "List of schools in VIT",
+         "list of schools in VIT",
+         "Schools in vit","schools","Schools","SCHOOLS","School","SCHOOL","school","vit schools",
          "What are the schools at VIT?",
          "How many schools are there in VIT?",
          "Names of all the schools in VIT",
          "Tell me about the academic schools in VIT",
          "What are the different departments or schools in VIT?"],
         "responses": [
-            "Here’s the list of schools at VIT:\n\n1️⃣ School of Advanced Sciences (SAS)\n2️⃣ School of Bio Sciences & Technology (SBST)\n3️⃣ School of Civil Engineering (SCE)\n4️⃣ School of Chemical Engineering (SCHEME)\n5️⃣ School of Computer Science and Engineering (SCOPE)\n6️⃣ School of Computer Science Engineering and Information Systems (SCORE)\n7️⃣ School of Electrical Engineering (SELECT)\n8️⃣ School of Electronics Engineering (SENSE)\n9️⃣ School of Healthcare Science and Engineering (SHINE)\n🔟 School of Mechanical Engineering (SMEC)\n11️⃣ School of Social Sciences and Languages (SSL)\n12️⃣ School of Hotel & Tourism Management (HOT)\n13️⃣ VIT School of Agricultural Innovations And Advanced Learning (VAIAL)\n14️⃣ VIT Business School (VIT BS)\n15️⃣ VIT School of Design (V-SIGN)\n16️⃣ VIT School of Media, Arts and Technology (V-SMART)\n17️⃣ School of Architecture (V-SPARC)"
+            "There are 7 schools in VIT. Here’s the list of schools at VIT:\n\n1️⃣ School of Advanced Sciences (SAS)\n2️⃣ School of Bio Sciences & Technology (SBST)\n3️⃣ School of Civil Engineering (SCE)\n4️⃣ School of Chemical Engineering (SCHEME)\n5️⃣ School of Computer Science and Engineering (SCOPE)\n6️⃣ School of Computer Science Engineering and Information Systems (SCORE)\n7️⃣ School of Electrical Engineering (SELECT)\n8️⃣ School of Electronics Engineering (SENSE)\n9️⃣ School of Healthcare Science and Engineering (SHINE)\n🔟 School of Mechanical Engineering (SMEC)\n11️⃣ School of Social Sciences and Languages (SSL)\n12️⃣ School of Hotel & Tourism Management (HOT)\n13️⃣ VIT School of Agricultural Innovations And Advanced Learning (VAIAL)\n14️⃣ VIT Business School (VIT BS)\n15️⃣ VIT School of Design (V-SIGN)\n16️⃣ VIT School of Media, Arts and Technology (V-SMART)\n17️⃣ School of Architecture (V-SPARC)"
         ]
         },
         { "tag": "faculty_info",
         "patterns": [
             "Can you give me faculty info?",
-            "HOD?",
+            "HOD?", "teachers","Teachers","faculty","Faculty","teacher","Teacher",
             "Where can I find faculty details?",
             "Give me the list of faculty members.",
             "Where can I check information about professors?",
-            "Faculty details of VIT",
-            "VIT HOD details","How can I contact my teacher?"
+            "Faculty details of VIT","hod","staff","Staff","Contact my teacher", "contact faculty","Contact faculty","contact Faculty","Contact teacher","contact Teacher",
+            "VIT HOD details","How can I contact my teacher?","who will teach me","teach","Teach"
         ],
         "responses": [
           "You can find complete information about VIT faculty members and Heads of Departments (HODs) on the official VIT Faculty page: https://vit.ac.in/faculty 👩‍🏫👨‍🏫"
@@ -69,8 +74,8 @@
         {"tag": "dean",
         "patterns": [
            "Can you tell me the names of all deans of schools?",
-          "List of all school deans in VIT",
-          "Who are the deans of different schools?",
+          "List of all school deans in VIT","deans","Deans","dean","Dean",
+          "Who are the deans of different schools?","school dean","dean of School","Deans of schools",
           "Give me the dean names and their emails",
           "List all VIT school deans with contact info"
         ],
@@ -83,7 +88,7 @@
         "tag": "dean_info",
         "patterns": [
             "Can you give me the details of the dean of SCOPE?",
-           "Who is the dean of SBST?",
+           "Who is the dean of SBST?", "details of dean","Details of ","Contact info of dean","Contact info of Dean",
             "Tell me the dean of SMEC",
             "What is the email ID of the dean of SAS?",
             "Dean of SSL?",
@@ -98,13 +103,13 @@
         {
         "tag": "cs_specialisation",
         "patterns": [
-          "What are the CSE specializations offered at VIT?",
-          "List of Computer Science branches in VIT",
+          "What are the CSE specializations offered at VIT?", "cs specialization","cs branches","CS","CSE","CSE Specialization","cse specialization","Specializations",
+          "List of Computer Science branches in VIT","cse courses","CSE Courses",
          "Different specializations in CSE at VIT",
          "Tell me about CSE courses at VIT Vellore",
          "How many specializations are there in Computer Science?",
          "CSE specializations at VIT Vellore",
-         "What CSE programs does VIT offer?"
+         "What CSE programs does VIT offer?","Computer Science branches","Computer science Branches","computer science branches","computer science branch"
          ],
         "responses": [
            "Here are the Computer Science and Engineering (CSE) programs offered at VIT, Vellore:\n\n1️⃣ B.Tech. Computer Science and Engineering\n2️⃣ B.Tech. Computer Science and Engineering (Bioinformatics)\n3️⃣ B.Tech. Computer Science and Engineering (Information Security)\n4️⃣ B.Tech. Computer Science and Engineering and Business Systems (in collaboration with TCS)\n5️⃣ B.Tech. Computer Science and Engineering (Internet of Things)\n6️⃣ B.Tech. Computer Science and Engineering (Data Science)\n7️⃣ B.Tech. Computer Science and Engineering (Block Chain Technology)\n8️⃣ B.Tech. Computer Science and Engineering (Artificial Intelligence and Machine Learning)"

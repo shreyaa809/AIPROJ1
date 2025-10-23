@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VitAsk Chatbot</title>
+  <style>
+    body { font-family: Arial, sans-serif; display:flex; height:100vh; align-items:center; justify-content:center; background:#f2f4f7; }
+    .chat-container { width:420px; max-width:95%; background:white; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); overflow:hidden; }
+    .messages { height:60vh; padding:16px; overflow:auto; border-bottom:1px solid #eee; }
+    .message { margin:8px 0; }
+    .from-user { text-align:right; }
+    .bubble { display:inline-block; padding:10px 14px; border-radius:16px; max-width:80%; }
+    .user .bubble { background:#d1e7ff; }
+    .bot .bubble { background:#f1f3f5; }
+    .input-area { display:flex; padding:12px; }
+    input[type=text] { flex:1; padding:10px 12px; border-radius:8px; border:1px solid #ddd; }
+    button { margin-left:8px; padding:10px 14px; border-radius:8px; border:none; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="messages" id="messages"></div>
+    <div class="input-area">
+      <input id="messageInput" type="text" placeholder="Ask about VIT..." />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const messagesEl = document.getElementById('messages')
+    const input = document.getElementById('messageInput')
+    const sendBtn = document.getElementById('sendBtn')
+
+    function appendMessage(text, from='bot'){
+      const wrapper = document.createElement('div')
+      wrapper.className = 'message ' + (from === 'user' ? 'user' : 'bot')
+      const bubble = document.createElement('div')
+      bubble.className = 'bubble'
+      bubble.textContent = text
+      wrapper.appendChild(bubble)
+      messagesEl.appendChild(wrapper)
+      messagesEl.scrollTop = messagesEl.scrollHeight
+    }
+
+    async function send(){
+      const text = input.value.trim()
+      if(!text) return
+      appendMessage(text, 'user')
+      input.value = ''
+
+      try{
+        const res = await fetch('http://127.0.0.1:5000/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: text })
+        })
+        const data = await res.json()
+        if(data.response) appendMessage(data.response, 'bot')
+        else appendMessage('Oops — no reply from server', 'bot')
+      }catch(e){
+        appendMessage('Error connecting to server', 'bot')
+        console.error(e)
+      }
+    }
+
+    sendBtn.addEventListener('click', send)
+    input.addEventListener('keydown', (e)=>{ if(e.key === 'Enter') send() })
+
+    // Welcome message
+    appendMessage('Hello! I am VitAsk — ask me about VIT Vellore. (Try "What is the VIT\'s official site?")')
+  </script>
+</body>
+</html>
