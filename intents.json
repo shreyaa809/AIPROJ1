@@ -1,50 +1,145 @@
 {
-    "intents": [
-        {"tag": "greetings",
-        "patterns": ["hello","hi","hey","good day","greetings","whats up","hows it going?","Hello","Hi","Hey there","How's it going?","How are you?","how are u","wassup","Wassup"],
-        "responses": ["Hello! How can I help you?","Hey!","Hey there! What can I do for you?"]
-        },
-        {"tag": "goodbye",
-        "patterns": ["see you","bye","good bye","i am leaving","Have a good day","talk to you later","ttyl","Ttyl","have a gud day","Bye","See ya","See Ya!"],
-        "responses": ["Sad to see you go :(","Hope to see you soon","Bye!"]
-        },
-        {"tag": "name",
-        "patterns":["what is your name","What should i call u","Introduce yourself","whats your name","What's ur name?","What should I Call u?","ur name?","ur name","Your Name?","Who are u?","Who r you?","who r u?","Who r u?"],
-        "responses": ["I am VitAsk","My name is VitAsk","You can call me VitAsk","Hi I am VitAsk and I am here to solve your queries regarding VIT"]
-        },
-        {"tag": "task",
-        "patterns":["What do you do?","what do u do?","how can u help me?","How can you help me?","How will you help me?"],
-        "responses": ["I will answer your queries regarding VIT Vellore. You can ask me about the various subjects in different sems, the preferable teachers, the name of HODS and many more things! I can even assist you in using VTOP"]
-        },
-        {"tag": "Official_site",
-        "patterns":["What is the VIT's official site?", "What is the official website of VIT?",
-        "Give me VIT website", "Official site of VIT","site","Site","website","Website"],
-        "responses": ["The official website of VIT is https://vit.ac.in/ 🌐"]
-        },
-        {"tag":"user",
+  "intents": [
+    {
+      "tag": "greetings",
+      "patterns": [
+        "hello","hlw","hey!!",
+        "hi",
+        "hey",
+        "good day",
+        "greetings",
+        "whats up",
+        "hows it going?",
+        "Hello",
+        "Hi",
+        "Hey there",
+        "How's it going?",
+        "How are you?",
+        "how are u",
+        "wassup",
+        "Wassup"
+      ],
+      "responses": [
+        "Hello! How can I help you?",
+        "Hey!",
+        "Hey there! What can I do for you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "see you",
+        "bye",
+        "good bye",
+        "i am leaving",
+        "Have a good day",
+        "talk to you later",
+        "ttyl",
+        "Ttyl",
+        "have a gud day",
+        "Bye",
+        "See ya",
+        "See Ya!"
+      ],
+      "responses": [
+        "Sad to see you go :(",
+        "Hope to see you soon",
+        "Bye!"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name",
+        "What should I call you",
+        "Introduce yourself",
+        "whats your name",
+        "What's your name?",
+        "What should I call u?",
+        "ur name?",
+        "ur name",
+        "Your Name?",
+        "Who are u?","introduce yourself","introduce urself","introduce Urself",
+        "Who r you?","who are you","what are you","What are you","Tell about yourself","tell about yourself",
+        "who r u?"
+      ],
+      "responses": [
+        "I am VitAsk",
+        "My name is VitAsk",
+        "You can call me VitAsk",
+        "Hi, I am VitAsk and I am here to solve your queries regarding VIT."
+      ]
+    },
+    {"tag":"user",
         "patterns":["I need some help regarding vit ","I need your help with some issue","help me solve a problem related to vit","i need ur help","ur help","your help","Your help","Your Help","I neeed your help.","I need your Help."],
         "responses":["Sure, How may I assist you?","Sure! Tell me what you want."]
         },
-        {"tag": "About",
-        "patterns":["Tell me about VIT","Introduce Vit","about vit","about vellore institute of technology","vit","VIT","Vit"],
-        "responses":["VIT stands for Vellore Institute of Technology. It has 4 branches in Vellore, Bhopal, Chennai and Amravati. You can know more about VIT through its official site: https://vit.ac.in/"]
-        },
-        {"tag": "vtop",
-        "patterns": [
-           "Which site is used by VIT students for accessing study materials?",
-           "Where can I find my attendance and grades?",
-           "Which portal do VIT students use for academics?",
-          "What is the link to the VTOP portal?",
-         "How do I access VTOP?",
-         "Where can I log in to VTOP?",
-         "official site for vit students?","vtop is?", "VTOP is?","whats vtop?","Whats vtop","What's vtop?","What's VTOP?","What is VTOP?"
-        ,"VIT website link","student website","official site","Student Website","vtop","VTOP","Vtop","students site","Student's site"
-        ],
-        "responses": [
-           "VIT students use the VTOP portal for all academic activities such as attendance, grades, and study materials. For Vellore campus, you can log in here: https://vtop.vit.ac.in/vtop/login 🔗"
-        ]
-        },
-        {"tag": "schools",
+
+    {
+      "tag": "task",
+      "patterns": [
+        "What do you do?",
+        "what do u do?",
+        "how can u help me?",
+        "How can you help me?",
+        "How will you help me?"
+      ],
+      "responses": [
+        "I will answer your queries regarding VIT Vellore. You can ask me about the various subjects in different semesters, preferable teachers, HOD names, and many more things! I can even assist you in using VTOP."
+      ]
+    },
+    {
+      "tag": "about_vit",
+      "patterns": [
+        "What is VIT?","what is full form of vit","full form of vit","Full form of VIT",
+        "Tell me about VIT","tell about vit","about vit","About Vit","VIT","vit",
+        "What does VIT stand for?","VIT","vit",
+        "Give me details about VIT Vellore"
+      ],
+      "responses": [
+        "VIT stands for Vellore Institute of Technology, one of India's top private universities.",
+        "VIT Vellore is a premier private institution in Tamil Nadu offering engineering, management, and science programs."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where is VIT?",
+        "Location of VIT","where is vit","Where is vit?",
+        "Where is VIT Vellore located?",
+        "In which city is VIT?"
+      ],
+      "responses": [
+        "VIT Vellore is located in Vellore, Tamil Nadu, India.",
+        "The campus is in Katpadi, Vellore District, Tamil Nadu."
+      ]
+    },
+     {
+      "tag": "founder",
+      "patterns": [
+        "Who founded VIT?", "who founded vit?","founder vit","founder",
+        "Founder of VIT?",
+        "Who started VIT?"
+      ],
+      "responses": [
+        "VIT was founded by Dr. G. Viswanathan in 1984.",
+        "The founder of VIT is Dr. G. Viswanathan, who also served as a Member of Parliament."
+      ]
+    },
+    {
+      "tag": "courses_offered",
+      "patterns": [
+        "What courses does VIT offer?",
+        "List of programs in VIT","courses",
+        "Degrees available at VIT",
+        "What can I study at VIT?"
+      ],
+      "responses": [
+        "VIT offers undergraduate, postgraduate, and doctoral programs in Engineering, Science, Business, Design, and Law.",
+        "You can study B.Tech, M.Tech, MBA, MCA, B.Des, Law, and various Science courses at VIT."
+      ]
+    },
+     {"tag": "schools",
         "patterns": [
          "list of schools in VIT",
          "Schools in vit","schools","Schools","SCHOOLS","School","SCHOOL","school","vit schools",
@@ -54,10 +149,10 @@
          "Tell me about the academic schools in VIT",
          "What are the different departments or schools in VIT?"],
         "responses": [
-            "There are 7 schools in VIT. Here’s the list of schools at VIT:\n\n1️⃣ School of Advanced Sciences (SAS)\n2️⃣ School of Bio Sciences & Technology (SBST)\n3️⃣ School of Civil Engineering (SCE)\n4️⃣ School of Chemical Engineering (SCHEME)\n5️⃣ School of Computer Science and Engineering (SCOPE)\n6️⃣ School of Computer Science Engineering and Information Systems (SCORE)\n7️⃣ School of Electrical Engineering (SELECT)\n8️⃣ School of Electronics Engineering (SENSE)\n9️⃣ School of Healthcare Science and Engineering (SHINE)\n🔟 School of Mechanical Engineering (SMEC)\n11️⃣ School of Social Sciences and Languages (SSL)\n12️⃣ School of Hotel & Tourism Management (HOT)\n13️⃣ VIT School of Agricultural Innovations And Advanced Learning (VAIAL)\n14️⃣ VIT Business School (VIT BS)\n15️⃣ VIT School of Design (V-SIGN)\n16️⃣ VIT School of Media, Arts and Technology (V-SMART)\n17️⃣ School of Architecture (V-SPARC)"
+            "There are 7 schools in VIT. Here’s the list of schools at VIT:\n\n⿡ School of Advanced Sciences (SAS)\n⿢ School of Bio Sciences & Technology (SBST)\n⿣ School of Civil Engineering (SCE)\n⿤ School of Chemical Engineering (SCHEME)\n⿥ School of Computer Science and Engineering (SCOPE)\n⿦ School of Computer Science Engineering and Information Systems (SCORE)\n⿧ School of Electrical Engineering (SELECT)\n⿨ School of Electronics Engineering (SENSE)\n⿩ School of Healthcare Science and Engineering (SHINE)\n🔟 School of Mechanical Engineering (SMEC)\n1⿡ School of Social Sciences and Languages (SSL)\n1⿢ School of Hotel & Tourism Management (HOT)\n1⿣ VIT School of Agricultural Innovations And Advanced Learning (VAIAL)\n1⿤ VIT Business School (VIT BS)\n1⿥ VIT School of Design (V-SIGN)\n1⿦ VIT School of Media, Arts and Technology (V-SMART)\n1⿧ School of Architecture (V-SPARC)"
         ]
         },
-        { "tag": "faculty_info",
+         { "tag": "faculty_info",
         "patterns": [
             "Can you give me faculty info?",
             "HOD?", "teachers","Teachers","faculty","Faculty","teacher","Teacher",
@@ -71,7 +166,7 @@
           "You can find complete information about VIT faculty members and Heads of Departments (HODs) on the official VIT Faculty page: https://vit.ac.in/faculty 👩‍🏫👨‍🏫"
         ]
         },
-        {"tag": "dean",
+          {"tag": "dean",
         "patterns": [
            "Can you tell me the names of all deans of schools?",
           "List of all school deans in VIT","deans","Deans","dean","Dean",
@@ -80,27 +175,10 @@
           "List all VIT school deans with contact info"
         ],
          "responses": [
-         "Here are the deans of various schools at VIT:\n\n📚 Academics — Dr. Anthony Xavior M (dean.acad@vit.ac.in)\n🔬 Academic Research — Dr. Rajasekaran C (dean.ar@vit.ac.in)\n🧪 School of Advanced Sciences (SAS) — Dr. Karthikeyan K (dean.sas@vit.ac.in)\n🧫 School of Bio Sciences & Technology (SBST) — Dr. Suneetha V (dean.sbst@vit.ac.in)\n🏗️ School of Civil Engineering (SCE) — Dr. Saravana Kumar M P (dean.sce@vit.ac.in)\n⚡ School of Electrical Engineering (SELECT) — Dr. Kowsalya M (dean.select@vit.ac.in)\n📡 School of Electronics Engineering (SENSE) — Dr. Jasmin Pemeena Priyadarisini M (dean.sense@vit.ac.in)\n🧍‍♀️ School of Healthcare Science and Engineering (SHINE) — Dr. Geetha Manivasagam (dean.shine@vit.ac.in)\n⚙️ School of Mechanical Engineering (SMEC) — Dr. Kuppan P (dean.smec@vit.ac.in)\n🗣️ School of Social Sciences and Languages (SSL) — Dr. Selvam V (dean.ssl@vit.ac.in)\n🌾 VIT School of Agricultural Innovations And Advanced Learning (VAIAL) — Dr. Rajendran R (dean.vaial@vit.ac.in)\n🎨 VIT School of Design (V-SIGN) — Dr. Arun Tom Mathew (dean.vsign@vit.ac.in)\n🏫 VIT Business School (VIT BS) — Dr. Mary Cherian (dean.vitbs@vit.ac.in)"
+         "Here are the deans of various schools at VIT:\n\n📚 Academics — Dr. Anthony Xavior M (dean.acad@vit.ac.in)\n🔬 Academic Research — Dr. Rajasekaran C (dean.ar@vit.ac.in)\n🧪 School of Advanced Sciences (SAS) — Dr. Karthikeyan K (dean.sas@vit.ac.in)\n🧫 School of Bio Sciences & Technology (SBST) — Dr. Suneetha V (dean.sbst@vit.ac.in)\n🏗 School of Civil Engineering (SCE) — Dr. Saravana Kumar M P (dean.sce@vit.ac.in)\n⚡ School of Electrical Engineering (SELECT) — Dr. Kowsalya M (dean.select@vit.ac.in)\n📡 School of Electronics Engineering (SENSE) — Dr. Jasmin Pemeena Priyadarisini M (dean.sense@vit.ac.in)\n🧍‍♀ School of Healthcare Science and Engineering (SHINE) — Dr. Geetha Manivasagam (dean.shine@vit.ac.in)\n⚙ School of Mechanical Engineering (SMEC) — Dr. Kuppan P (dean.smec@vit.ac.in)\n🗣 School of Social Sciences and Languages (SSL) — Dr. Selvam V (dean.ssl@vit.ac.in)\n🌾 VIT School of Agricultural Innovations And Advanced Learning (VAIAL) — Dr. Rajendran R (dean.vaial@vit.ac.in)\n🎨 VIT School of Design (V-SIGN) — Dr. Arun Tom Mathew (dean.vsign@vit.ac.in)\n🏫 VIT Business School (VIT BS) — Dr. Mary Cherian (dean.vitbs@vit.ac.in)"
         ]
         },
-
-        {
-        "tag": "dean_info",
-        "patterns": [
-            "Can you give me the details of the dean of SCOPE?",
-           "Who is the dean of SBST?", "details of dean","Details of ","Contact info of dean","Contact info of Dean",
-            "Tell me the dean of SMEC",
-            "What is the email ID of the dean of SAS?",
-            "Dean of SSL?",
-             "Who is the dean of SHINE?",
-            "Give me the name and email of the dean of VIT BS",
-            "Who is the dean of V-SIGN?"
-            ],
-         "responses": [
-            "Sure! Please specify the school name (like SCOPE, SAS, SMEC, etc.) to get the dean’s details."
-            ]
-        },
-        {
+          {
         "tag": "cs_specialisation",
         "patterns": [
           "What are the CSE specializations offered at VIT?", "cs specialization","cs branches","CS","CSE","CSE Specialization","cse specialization","Specializations",
@@ -112,14 +190,717 @@
          "What CSE programs does VIT offer?","Computer Science branches","Computer science Branches","computer science branches","computer science branch"
          ],
         "responses": [
-           "Here are the Computer Science and Engineering (CSE) programs offered at VIT, Vellore:\n\n1️⃣ B.Tech. Computer Science and Engineering\n2️⃣ B.Tech. Computer Science and Engineering (Bioinformatics)\n3️⃣ B.Tech. Computer Science and Engineering (Information Security)\n4️⃣ B.Tech. Computer Science and Engineering and Business Systems (in collaboration with TCS)\n5️⃣ B.Tech. Computer Science and Engineering (Internet of Things)\n6️⃣ B.Tech. Computer Science and Engineering (Data Science)\n7️⃣ B.Tech. Computer Science and Engineering (Block Chain Technology)\n8️⃣ B.Tech. Computer Science and Engineering (Artificial Intelligence and Machine Learning)"
+           "Here are the Computer Science and Engineering (CSE) programs offered at VIT, Vellore:\n\n⿡ B.Tech. Computer Science and Engineering\n⿢ B.Tech. Computer Science and Engineering (Bioinformatics)\n⿣ B.Tech. Computer Science and Engineering (Information Security)\n⿤ B.Tech. Computer Science and Engineering and Business Systems (in collaboration with TCS)\n⿥ B.Tech. Computer Science and Engineering (Internet of Things)\n⿦ B.Tech. Computer Science and Engineering (Data Science)\n⿧ B.Tech. Computer Science and Engineering (Block Chain Technology)\n⿨ B.Tech. Computer Science and Engineering (Artificial Intelligence and Machine Learning)"
         ]
-        }
+    },
 
 
-
-
-
-
-    ]
+    {
+      "tag": "admissions",
+      "patterns": [
+        "How to get admission in VIT?",
+        "Admission process in VIT",
+        "How can I join VIT?","how can i get into vit?",
+        "Procedure to apply for VIT"
+      ],
+      "responses": [
+        "You can apply through the VITEEE exam for B.Tech programs and VITMEE, VITREE, or direct applications for others.",
+        "Admission to most undergraduate programs is through the VITEEE entrance examination."
+      ]
+    },
+    {
+      "tag": "vit_website",
+      "patterns": [
+        "VIT website",
+        "official website of VIT","Official site",
+        "link to VIT site",
+        "Where can I find VIT info online?"
+      ],
+      "responses": [
+        "You can visit https://vit.ac.in for all official information.",
+        "VIT’s official website is https://vit.ac.in."
+      ]
+    },
+    {
+      "tag": "academics",
+      "patterns": [
+        "academic system",
+        "how are semesters structured",
+        "credit system",
+        "grading in VIT",
+        "VIT academics info"
+      ],
+      "responses": [
+        "VIT follows a Choice Based Credit System (CBCS) with a flexible credit load.",
+        "Each semester includes theory, lab, and project components with continuous assessments and an end semester exam."
+      ]
+    },
+    {
+      "tag": "attendance",
+      "patterns": [
+        "attendance rules",
+        "minimum attendance in VIT",
+        "attendance requirement",
+        "what if attendance is low","Attendance","min attendance","minimum atten",
+        "attendance shortage","75 percent"
+      ],
+      "responses": [
+        "Students must maintain at least 75% attendance in each course.",
+        "Attendance below 75% may lead to loss of exam eligibility unless valid reasons are approved."
+      ]
+    },
+    {
+      "tag": "marks_and_grades",
+      "patterns": [
+        "how are grades given",
+        "grade calculation","Grade ","Grade system","grading system",
+        "marks to grade conversion",
+        "grading scale in VIT"
+      ],
+      "responses": [
+        "VIT uses a 10-point grading system ranging from S (10) to F (0).",
+        "Final grades depend on Continuous Assessment Tests (CATs), Quizzes, Assignments, and End Semester Exams."
+      ]
+    },
+    {
+      "tag": "exams",
+      "patterns": [
+        "when are exams",
+        "exam schedule",
+        "VIT exam pattern","exam pattern",
+        "CAT and FAT meaning",
+        "midterms in VIT"
+      ],
+      "responses": [
+        "Each semester has two Continuous Assessment Tests (CAT-1, CAT-2) and one Final Assessment Test (FAT).",
+        "CATs are online or offline exams, and FAT is the end-semester comprehensive test."
+      ]
+    },
+    {
+      "tag": "cgpa",
+      "patterns": [
+        "how is CGPA calculated",
+        "CGPA formula",
+        "what is GPA and CGPA",
+        "grading method VIT"
+      ],
+      "responses": [
+        "CGPA is calculated as the weighted average of grade points across courses based on credits.",
+        "Cumulative Grade Point Average (CGPA) represents your academic performance till date."
+      ]
+    },
+    {
+      "tag": "faculty",
+      "patterns": [
+        "who are faculty",
+        "teacher info",
+        "HOD list","teachers","Teacher","Teachers","professor","Professors",
+        "faculty contact",
+        "how to contact professors"
+      ],
+      "responses": [
+        "Faculty details are available on the VIT website under each school’s page.",
+        "You can contact professors via their official VIT email IDs or during consultation hours."
+      ]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "hostel info",
+        "hostel rules",
+        "hostel timings",
+        "accommodation at VIT",
+        "how are hostels"
+      ],
+      "responses": [
+        "VIT provides well-maintained hostels with options for AC and Non-AC rooms.",
+        "Hostel gates generally close by 9 PM for boys and 8 PM for girls.",
+        "You can choose between single, double, triple, and four-sharing rooms."
+      ]
+    },
+    {
+      "tag": "mess_food",
+      "patterns": [
+        "mess food",
+        "how is mess",
+        "food quality",
+        "veg and non-veg options",
+        "food complaints"
+      ],
+      "responses": [
+        "VIT offers both vegetarian and non-vegetarian mess options.",
+        "Students can choose between North Indian, South Indian, and Special mess types.",
+        "You can raise food-related issues in the Hostel Office."
+      ]
+    },
+    {
+      "tag": "clubs",
+      "patterns": [
+        "clubs in VIT",
+        "student chapters",
+        "technical clubs",
+        "cultural clubs",
+        "how to join clubs"
+      ],
+      "responses": [
+        "VIT has over 100 clubs across cultural, technical, and social domains.",
+        "You can join clubs during the Club Induction Drive held every semester.",
+        "Popular clubs include IEEE, CSI, ISTE, Music Club, and Dance Club."
+      ]
+    },
+    {
+      "tag": "placements",
+      "patterns": [
+        "placements at VIT",
+        "highest package",
+        "average package",
+        "companies visiting VIT",
+        "placement statistics"
+      ],
+      "responses": [
+        "VIT has excellent placements with companies like Microsoft, Amazon, Deloitte, and TCS.",
+        "The highest package offered recently exceeded 1 crore INR per annum.",
+        "Average packages vary between 6–8 LPA depending on the branch."
+      ]
+    },
+    {
+      "tag": "internships",
+      "patterns": [
+        "internship opportunities",
+        "how to apply for internship",
+        "summer internship",
+        "placement and internship difference"
+      ],
+      "responses": [
+        "Many students do internships through campus placement or external companies.",
+        "VIT supports industrial internships as part of the curriculum through FFCS registration."
+      ]
+    },
+    {
+      "tag": "ffcs",
+      "patterns": [
+        "what is FFCS",
+        "how does FFCS work",
+        "course registration",
+        "slot booking system",
+        "VTOP FFCS"
+      ],
+      "responses": [
+        "FFCS stands for Fully Flexible Credit System, allowing students to select their courses and faculties.",
+        "You can register your courses and slots through VTOP during registration week."
+      ]
+    },
+    {
+      "tag": "vtop",
+      "patterns": [
+        "what is VTOP",
+        "VTOP login",
+        "how to use VTOP",
+        "VTOP portal","VTOP","vtop","Vtop",
+        "vit.ac.in/vtop"
+      ],
+      "responses": [
+        "VTOP (VIT Online Portal) is used for attendance, marks, registration, and academic info.",
+        "Visit https://vtop.vit.ac.in to access your dashboard using your registration number and password."
+      ]
+    },
+    {
+      "tag": "scholarships",
+      "patterns": [
+        "scholarships in VIT",
+        "financial aid",
+        "fee waiver",
+        "merit scholarships",
+        "top rank benefits"
+      ],
+      "responses": [
+        "VIT offers scholarships under the GV Merit Scholarship and Toppers’ schemes.",
+        "Top rankers in VITEEE may get full or partial tuition fee waivers."
+      ]
+    },
+    {
+      "tag": "festivals",
+      "patterns": [
+        "college fests",
+        "fests in VIT","Fests",
+        "technical fest",
+        "cultural fest",
+        "graVITas",
+        "Riviera"
+      ],
+      "responses": [
+        "VIT hosts two major annual fests – graVITas (tech fest) and Riviera (cultural fest).",
+        "Students across India participate in these vibrant events each year."
+      ]
+    },
+    {
+      "tag": "wifi",
+      "patterns": [
+        "wifi in campus",
+        "internet speed",
+        "is wifi available in hostels",
+        "wifi problem"
+      ],
+      "responses": [
+        "High-speed Wi-Fi is available across the VIT campus and hostels.",
+        "In case of connectivity issues, contact the IT helpdesk."
+      ]
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "library",
+        "how is the library",
+        "library timing",
+        "books available",
+        "library facilities",
+        "vit library"
+      ],
+      "responses": [
+        "VIT’s Central Library is one of the largest in India with digital and physical resources.",
+        "Library timings are generally from 8 AM to 9 PM on working days."
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "sports facilities",
+        "sports in VIT",
+        "playground",
+        "gym",
+        "sports events"
+      ],
+      "responses": [
+        "VIT offers indoor and outdoor sports facilities including cricket, football, tennis, badminton, and gym.",
+        "Sports tournaments are held regularly including VIT’s annual sports fest."
+      ]
+    },
+    {
+      "tag": "transport",
+      "patterns": [
+        "transport",
+        "bus service",
+        "VIT bus",
+        "transportation",
+        "shuttle service"
+      ],
+      "responses": [
+        "VIT provides transport services for day scholars to nearby cities like Katpadi and Vellore.",
+        "You can register for bus passes through the transport office."
+      ]
+    },
+    {
+      "tag": "hostel_fees",
+      "patterns": [
+        "hostel fees",
+        "ac room fee",
+        "non ac room fee",
+        "mess fee",
+        "annual hostel cost"
+      ],
+      "responses": [
+        "Hostel fees vary based on room type: Non-AC (₹65,000–₹90,000) and AC (₹1,10,000–₹1,50,000).",
+        "Mess fees are approximately ₹55,000–₹65,000 per year."
+      ]
+    },
+    {
+      "tag": "placement_statistics",
+      "patterns": [
+        "placement record",
+        "placement percentage",
+        "VIT placement data",
+        "company list",
+        "campus placements"
+      ],
+      "responses": [
+        "VIT has a placement rate above 90% every year.",
+        "Over 700 companies visit for campus recruitment annually."
+      ]
+    },
+    {
+      "tag": "fee_structure",
+      "patterns": [
+        "tuition fees",
+        "course fees",
+        "btech fees",
+        "MBA fees",
+        "semester fees",
+        "VIT fee details"
+      ],
+      "responses": [
+        "Fees depend on the program and category (A/B).",
+        "B.Tech fees range from ₹1.76 to ₹1.98 lakhs per year (approx).",
+        "MBA program costs about ₹3.5 lakhs per year."
+      ]
+    },
+    {
+      "tag": "disciplinary_rules",
+      "patterns": [
+        "rules",
+        "discipline policy",
+        "student rules",
+        "ragging policy",
+        "dress code"
+      ],
+      "responses": [
+        "VIT maintains strict discipline with zero tolerance toward ragging or misconduct.",
+        "Formal dress code is required on certain academic days."
+      ]
+    },
+    {
+      "tag": "hostel_rules",
+      "patterns": [
+        "what are hostel rules",
+        "visitor rules",
+        "hostel curfew",
+        "electric kettle allowed",
+        "gadgets in hostel"
+      ],
+      "responses": [
+        "Visitors are not allowed inside rooms; curfew timings must be followed.",
+        "Electric appliances like kettles and irons are prohibited for safety reasons."
+      ]
+    },
+    {
+      "tag": "medical_facilities",
+      "patterns": [
+        "medical",
+        "hospital",
+        "doctor",
+        "health centre",
+        "emergency help"
+      ],
+      "responses": [
+        "VIT has an on-campus health centre with doctors and emergency services available 24/7.",
+        "Students can also avail ambulance service in case of emergencies."
+      ]
+    },
+    {
+      "tag": "id_card",
+      "patterns": [
+        "ID card",
+        "student ID",
+        "lost ID",
+        "duplicate ID",
+        "where to get ID"
+      ],
+      "responses": [
+        "Every student must carry their VIT ID card on campus.",
+        "In case of loss, apply for a duplicate card through the Student Welfare Office."
+      ]
+    },
+    {
+      "tag": "placements_contact",
+      "patterns": [
+        "placement officer",
+        "placement contact",
+        "how to contact placement cell",
+        "placement incharge"
+      ],
+      "responses": [
+        "For placement-related queries, email placement@vit.ac.in.",
+        "You can also visit the Placement and Training Centre located near the Technology Tower."
+      ]
+    },
+    {
+      "tag": "library_card",
+      "patterns": [
+        "library card",
+        "borrow books",
+        "issue books",
+        "library rules"
+      ],
+      "responses": [
+        "Students can issue books using their ID card.",
+        "Books must be returned within the due date to avoid fines."
+      ]
+    },
+     {
+      "tag": "timetable",
+      "patterns": [
+        "class schedule",
+        "timetable",
+        "how to view timetable",
+        "my slots",
+        "when are classes"
+      ],
+      "responses": [
+        "You can check your timetable under the Academics tab in VTOP.",
+        "It will show your course codes, slots, and room numbers."
+      ]
+    },
+    {
+      "tag": "academic_calendar",
+      "patterns": [
+        "academic calendar",
+        "sem dates",
+        "vacation dates",
+        "holidays",
+        "exam schedule release"
+      ],
+      "responses": [
+        "The academic calendar is available on VTOP under Academics -> Calendar.",
+        "It contains all important dates like CATs, FATs, holidays, and vacations."
+      ]
+    },
+    {
+      "tag": "discipline_committee",
+      "patterns": [
+        "disciplinary committee",
+        "student council",
+        "complaint cell",
+        "grievance redressal"
+      ],
+      "responses": [
+        "VIT has a student grievance redressal committee to address issues related to academics and conduct.",
+        "You can reach them through the Student Welfare Office."
+      ]
+    },
+    {
+      "tag": "address",
+      "patterns": [
+        "college address",
+        "VIT vellore address",
+        "how to reach VIT",
+        "campus location",
+        "where is VIT"
+      ],
+      "responses": [
+        "Vellore Institute of Technology, Vellore Campus, Kelambakkam Road, Vellore, Tamil Nadu - 632014.",
+        "Nearest railway station: Katpadi Junction (~3 km)."
+      ]
+    },
+    {
+      "tag": "transport_facility",
+      "patterns": [
+        "bus timings",
+        "bus routes",
+        "how to register for bus",
+        "transport office",
+        "day scholar transport"
+      ],
+      "responses": [
+        "Bus services operate from early morning to evening connecting nearby areas.",
+        "You can register and renew your bus pass at the Transport Office or VTOP portal."
+      ]
+    },
+    {
+      "tag": "research",
+      "patterns": [
+        "research",
+        "PhD",
+        "research opportunities",
+        "projects",
+        "labs"
+      ],
+      "responses": [
+        "VIT encourages research through funded projects and student innovation programs.",
+        "Research labs are available across all schools for hands-on learning."
+      ]
+    },
+    {
+      "tag": "ranking",
+      "patterns": [
+        "VIT ranking",
+        "university rank",
+        "NAAC grade",
+        "NIRF ranking",
+        "world ranking"
+      ],
+      "responses": [
+        "VIT is ranked among the top private universities in India by NIRF and QS.",
+        "It holds an ‘A++’ grade accreditation by NAAC."
+      ]
+    },
+     {
+      "tag": "clubs_contact",
+      "patterns": [
+        "club contact",
+        "how to start a club",
+        "club registration",
+        "student chapter contact"
+      ],
+      "responses": [
+        "You can contact the respective club heads via the student club portal or email.",
+        "To start a new club, apply through the Dean of Students’ Welfare."
+      ]
+    },
+    {
+      "tag": "exam_hall_ticket",
+      "patterns": [
+        "hall ticket",
+        "exam admit card",
+        "download hall ticket",
+        "exam entry pass"
+      ],
+      "responses": [
+        "Hall tickets for CATs and FATs can be downloaded from VTOP before the exam.",
+        "Ensure all dues are cleared before downloading your hall ticket."
+      ]
+    },
+    {
+      "tag": "results",
+      "patterns": [
+        "exam results",
+        "check results",
+        "when will results come",
+        "where to see results"
+      ],
+      "responses": [
+        "Results are published on VTOP under the 'Examination' tab.",
+        "You will get notified by SMS or email once the results are out."
+      ]
+    },
+    {
+      "tag": "disciplinary_action",
+      "patterns": [
+        "what happens if rules broken",
+        "cheating punishment",
+        "disciplinary action",
+        "ragging consequences"
+      ],
+      "responses": [
+        "VIT enforces strict action against misconduct, including suspension or expulsion.",
+        "All students must follow the university’s code of conduct."
+      ]
+    },
+    {
+      "tag": "foreign_exchange",
+      "patterns": [
+        "semester abroad",
+        "foreign programs",
+        "exchange program",
+        "study abroad",
+        "international tie-up"
+      ],
+      "responses": [
+        "VIT offers Semester Abroad Programs (SAP) with universities in the US, UK, and Europe.",
+        "You can apply through the International Relations Office (IRO)."
+      ]
+    },
+    {
+      "tag": "hostel_contact",
+      "patterns": [
+        "hostel contact",
+        "warden number",
+        "hostel incharge",
+        "hostel office contact"
+      ],
+      "responses": [
+        "You can reach the Hostel Office via hostel.office@vit.ac.in or visit the ground floor of the hostel block.",
+        "Each hostel block has a warden in charge for assistance."
+      ]
+    },
+    {
+      "tag": "student_portal_help",
+      "patterns": [
+        "VTOP not working",
+        "portal issue",
+        "login problem",
+        "password reset",
+        "account locked"
+      ],
+      "responses": [
+        "If VTOP is not working, try clearing browser cache or switching to another browser.",
+        "For login issues, contact IT Support at itsupport@vit.ac.in."
+      ]
+    },
+    {
+      "tag": "events",
+      "patterns": [
+        "events in VIT",
+        "upcoming events",
+        "college activities",
+        "tech fest date",
+        "cultural events"
+      ],
+      "responses": [
+        "You can check all upcoming events and fests on the official VIT website or student portal.",
+        "Major events include Riviera, graVITas, hackathons, and guest lectures."
+      ]
+    },
+    {
+      "tag": "career_guidance",
+      "patterns": [
+        "career counselling",
+        "career help",
+        "resume building",
+        "mock interviews"
+      ],
+      "responses": [
+        "The Career Development Centre (CDC) at VIT offers guidance on placements and higher studies.",
+        "Students can book sessions for mock interviews and resume reviews."
+      ]
+    },
+    {
+      "tag": "alumni",
+      "patterns": [
+        "alumni network",
+        "VIT alumni",
+        "former students",
+        "alumni association"
+      ],
+      "responses": [
+        "VIT has a strong alumni network across 120+ countries.",
+        "You can join the official VIT Alumni Portal to connect with seniors."
+      ]
+    },
+    {
+      "tag": "contact_info",
+      "patterns": [
+        "contact details",
+        "phone number",
+        "email",
+        "vit contact",
+        "helpline"
+      ],
+      "responses": [
+        "📞 General Enquiry: +91-416-2243091 / 93 / 94",
+        "📧 Email: admin.office@vit.ac.in",
+        "🌐 Website: https://vit.ac.in"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thx",
+        "tysm",
+        "thank u",
+        "appreciate it"
+      ],
+      "responses": [
+        "You're welcome!",
+        "Glad I could help!",
+        "Anytime!"
+      ]
+    },
+    {
+      "tag": "confused",
+      "patterns": [
+        "I don’t understand",
+        "not clear",
+        "say again",
+        "repeat please",
+        "what do you mean"
+      ],
+      "responses": [
+        "Could you please rephrase that?",
+        "I didn’t catch that. Try asking again differently."
+      ]
+    },
+    {
+      "tag": "no_answer",
+      "patterns": [
+        "none of these",
+        "don’t know",
+        "no idea",
+        "not sure"
+      ],
+      "responses": [
+        "No worries! I can help you find the right info. Try asking me about VIT academics, hostels, or placements."
+      ]
+    }
+  ]
 }

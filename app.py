@@ -49,13 +49,20 @@ def predict_class(sentence):
 def get_response(intents_list, intents_json):
     if not intents_list:
         return "Sorry, I didn't understand that. Can you rephrase?"
+
     tag = intents_list[0]['intent']
     list_of_intents = intents_json['intents']
+
     for i in list_of_intents:
         if i['tag'] == tag:
             result = np.random.choice(i['responses'])
             break
+    else:
+        
+        result = "I'm sorry, I couldn't find any information related to that. Please try asking differently."
+    
     return result
+
 
 # Routes
 @app.route('/')
