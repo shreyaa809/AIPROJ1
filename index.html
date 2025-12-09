@@ -5,21 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VitAsk Chatbot</title>
   <style>
-    body { font-family: Arial, sans-serif; display:flex; height:100vh; align-items:center; justify-content:center; background:#f2f4f7; }
-    .chat-container { width:420px; max-width:95%; background:white; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); overflow:hidden; }
-    .messages { height:60vh; padding:16px; overflow:auto; border-bottom:1px solid #eee; }
-    .message { margin:8px 0; }
-    .from-user { text-align:right; }
-    .bubble { display:inline-block; padding:10px 14px; border-radius:16px; max-width:80%; }
-    .user .bubble { background:#d1e7ff; }
-    .bot .bubble { background:#f1f3f5; }
-    .input-area { display:flex; padding:12px; }
-    input[type=text] { flex:1; padding:10px 12px; border-radius:8px; border:1px solid #ddd; }
-    button { margin-left:8px; padding:10px 14px; border-radius:8px; border:none; cursor:pointer; }
+    body { 
+      font-family: Arial, sans-serif; 
+      display: flex; 
+      height: 100vh; 
+      align-items: center; 
+      justify-content: center; 
+      background: #e8f3ff;
+      background-image: url('/static/vitlogo.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 280px;
+      opacity: 0.85;
+      margin: 0;
+    }
+
+    .chat-container { 
+      width: 420px; 
+      max-width: 95%; 
+      background: #fafdff; 
+      border-radius: 14px; 
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1); 
+      overflow: hidden; 
+      position: relative; 
+      z-index: 1;
+    }
+
+    .header {
+      text-align: center;
+      background: #cbe6ff;
+      color: #034574;
+      padding: 14px;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #b0d8ff;
+    }
+
+    .messages { 
+      height: 60vh; 
+      padding: 16px; 
+      overflow: auto; 
+      border-bottom: 1px solid #dbe9f5;
+    }
+
+    .message { margin: 8px 0; }
+    .bubble { 
+      display: inline-block; 
+      padding: 10px 14px; 
+      border-radius: 16px; 
+      max-width: 80%; 
+    }
+
+    .user .bubble { background: #cbe6ff; color: #02335f; }
+    .bot .bubble { background: #e3f1ff; color: #1a3d5d; }
+
+    .input-area { display: flex; padding: 12px; background: #f4faff; }
+    input[type=text] { flex: 1; padding: 10px 12px; border-radius: 8px; border: 1px solid #bcd8f6; outline: none; }
+    button { 
+      margin-left: 8px; 
+      padding: 10px 14px; 
+      border-radius: 8px; 
+      border: none; 
+      cursor: pointer; 
+      background: #6ab7ff; 
+      color: white; 
+      font-weight: 600; 
+      transition: 0.3s;
+    }
+    button:hover { background: #4da6ff; }
   </style>
 </head>
 <body>
   <div class="chat-container">
+    <div class="header">VITAsk</div>
     <div class="messages" id="messages"></div>
     <div class="input-area">
       <input id="messageInput" type="text" placeholder="Ask about VIT..." />
@@ -50,7 +109,7 @@
       input.value = ''
 
       try{
-          const res = await fetch('/api/chat', {
+        const res =  await fetch('/api/chat', {
 
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -68,8 +127,7 @@
     sendBtn.addEventListener('click', send)
     input.addEventListener('keydown', (e)=>{ if(e.key === 'Enter') send() })
 
-    
-    appendMessage('Hello! I am VitAsk — ask me about VIT Vellore. (Try "What is the VIT\'s official site?")')
+    appendMessage('👋 Hello! I am VITAsk — your friendly VIT Vellore chatbot. (Try asking “What is the official website?”)')
   </script>
 </body>
 </html>
